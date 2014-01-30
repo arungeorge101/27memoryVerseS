@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate,NSXMLParserDelegate>{
+    UIScrollView* scrollView;
+    UIPageControl* pageControl;
+    NSMutableArray *arrayPages;
+}
+
+@property (nonatomic, retain) IBOutlet UIScrollView* scrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
+
