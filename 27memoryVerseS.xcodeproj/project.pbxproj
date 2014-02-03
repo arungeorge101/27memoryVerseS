@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11448613189DED9200D4EA1A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11448611189DED9200D4EA1A /* MainStoryboard_iPad.storyboard */; };
+		11448614189DED9200D4EA1A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11448612189DED9200D4EA1A /* MainStoryboard_iPhone.storyboard */; };
 		118C5968188E140F00E73A9B /* KJV_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 118C5967188E140F00E73A9B /* KJV_verses.xml */; };
 		118D0B7B18667E7A00657BE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D0B7A18667E7A00657BE6 /* UIKit.framework */; };
 		118D0B7D18667E7A00657BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D0B7C18667E7A00657BE6 /* Foundation.framework */; };
@@ -17,8 +19,6 @@
 		118D0B8D18667E7A00657BE6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 118D0B8C18667E7A00657BE6 /* Default.png */; };
 		118D0B8F18667E7A00657BE6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 118D0B8E18667E7A00657BE6 /* Default@2x.png */; };
 		118D0B9118667E7B00657BE6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 118D0B9018667E7B00657BE6 /* Default-568h@2x.png */; };
-		118D0B9418667E7B00657BE6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118D0B9218667E7B00657BE6 /* MainStoryboard_iPhone.storyboard */; };
-		118D0B9718667E7B00657BE6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118D0B9518667E7B00657BE6 /* MainStoryboard_iPad.storyboard */; };
 		118D0B9A18667E7B00657BE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118D0B9918667E7B00657BE6 /* ViewController.m */; };
 		118F64DC1873BD51003825D8 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 118F64DB1873BD51003825D8 /* Page.m */; };
 		11920D831867EB130005F82D /* NIV_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11920D821867EB130005F82D /* NIV_verses.xml */; };
@@ -30,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11448611189DED9200D4EA1A /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		11448612189DED9200D4EA1A /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		118C5967188E140F00E73A9B /* KJV_verses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KJV_verses.xml; sourceTree = "<group>"; };
 		118D0B7718667E7A00657BE6 /* 27memoryVerseS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 27memoryVerseS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118D0B7A18667E7A00657BE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -44,8 +46,6 @@
 		118D0B8C18667E7A00657BE6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		118D0B8E18667E7A00657BE6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		118D0B9018667E7B00657BE6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		118D0B9318667E7B00657BE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		118D0B9618667E7B00657BE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		118D0B9818667E7B00657BE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		118D0B9918667E7B00657BE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		118F64DA1873BD51003825D8 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
@@ -109,12 +109,12 @@
 		118D0B8018667E7A00657BE6 /* 27memoryVerseS */ = {
 			isa = PBXGroup;
 			children = (
+				11448611189DED9200D4EA1A /* MainStoryboard_iPad.storyboard */,
+				11448612189DED9200D4EA1A /* MainStoryboard_iPhone.storyboard */,
 				11B794E2188623B8003C3E67 /* KissXML */,
 				11920D811867E7DD0005F82D /* XMLFiles */,
 				118D0B8918667E7A00657BE6 /* AppDelegate.h */,
 				118D0B8A18667E7A00657BE6 /* AppDelegate.m */,
-				118D0B9218667E7B00657BE6 /* MainStoryboard_iPhone.storyboard */,
-				118D0B9518667E7B00657BE6 /* MainStoryboard_iPad.storyboard */,
 				118D0B9818667E7B00657BE6 /* ViewController.h */,
 				118D0B9918667E7B00657BE6 /* ViewController.m */,
 				118D0B8118667E7A00657BE6 /* Supporting Files */,
@@ -246,10 +246,10 @@
 				118D0B8D18667E7A00657BE6 /* Default.png in Resources */,
 				118D0B8F18667E7A00657BE6 /* Default@2x.png in Resources */,
 				118D0B9118667E7B00657BE6 /* Default-568h@2x.png in Resources */,
-				118D0B9418667E7B00657BE6 /* MainStoryboard_iPhone.storyboard in Resources */,
-				118D0B9718667E7B00657BE6 /* MainStoryboard_iPad.storyboard in Resources */,
 				11920D831867EB130005F82D /* NIV_verses.xml in Resources */,
 				118C5968188E140F00E73A9B /* KJV_verses.xml in Resources */,
+				11448613189DED9200D4EA1A /* MainStoryboard_iPad.storyboard in Resources */,
+				11448614189DED9200D4EA1A /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,22 +281,6 @@
 				118D0B8418667E7A00657BE6 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		118D0B9218667E7B00657BE6 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				118D0B9318667E7B00657BE6 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		118D0B9518667E7B00657BE6 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				118D0B9618667E7B00657BE6 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
