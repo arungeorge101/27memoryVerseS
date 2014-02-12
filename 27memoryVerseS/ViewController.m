@@ -15,7 +15,6 @@
 #import "DDXMLElementAdditions.h"
 #import "DDXMLPrivate.h"
 
-
 @interface ViewController ()
 
 @end

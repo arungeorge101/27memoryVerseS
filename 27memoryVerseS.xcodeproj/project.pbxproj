@@ -27,6 +27,8 @@
 		11B794F4188623B8003C3E67 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794EB188623B8003C3E67 /* DDXMLDocument.m */; };
 		11B794F5188623B8003C3E67 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794ED188623B8003C3E67 /* DDXMLElement.m */; };
 		11B794F6188623B8003C3E67 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794EF188623B8003C3E67 /* DDXMLNode.m */; };
+		11FEC9DD18A04D5D002DA8A7 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 11FEC9DC18A04D5D002DA8A7 /* 9.png */; };
+		11FECBDC18A1E1DB00E43981 /* tableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FECBDB18A1E1DB00E43981 /* tableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,9 @@
 		11B794EE188623B8003C3E67 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		11B794EF188623B8003C3E67 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		11B794F1188623B8003C3E67 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		11FEC9DC18A04D5D002DA8A7 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = ../../../Downloads/9.png; sourceTree = "<group>"; };
+		11FECBDA18A1E1DB00E43981 /* tableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tableVC.h; path = 27memoryVerseS/tableVC.h; sourceTree = "<group>"; };
+		11FECBDB18A1E1DB00E43981 /* tableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tableVC.m; path = 27memoryVerseS/tableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,9 @@
 		118D0B6E18667E7A00657BE6 = {
 			isa = PBXGroup;
 			children = (
+				11FECBDA18A1E1DB00E43981 /* tableVC.h */,
+				11FECBDB18A1E1DB00E43981 /* tableVC.m */,
+				11FEC9DB18A04D29002DA8A7 /* Images */,
 				118D0B8018667E7A00657BE6 /* 27memoryVerseS */,
 				118D0B7918667E7A00657BE6 /* Frameworks */,
 				118D0B7818667E7A00657BE6 /* Products */,
@@ -191,6 +199,14 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
+		11FEC9DB18A04D29002DA8A7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				11FEC9DC18A04D5D002DA8A7 /* 9.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,6 +266,7 @@
 				118C5968188E140F00E73A9B /* KJV_verses.xml in Resources */,
 				11448613189DED9200D4EA1A /* MainStoryboard_iPad.storyboard in Resources */,
 				11448614189DED9200D4EA1A /* MainStoryboard_iPhone.storyboard in Resources */,
+				11FEC9DD18A04D5D002DA8A7 /* 9.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +286,7 @@
 				11B794F4188623B8003C3E67 /* DDXMLDocument.m in Sources */,
 				11B794F5188623B8003C3E67 /* DDXMLElement.m in Sources */,
 				11B794F6188623B8003C3E67 /* DDXMLNode.m in Sources */,
+				11FECBDC18A1E1DB00E43981 /* tableVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
