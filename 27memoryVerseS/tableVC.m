@@ -14,24 +14,21 @@
 
 @implementation tableVC
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
-    self.clearsSelectionOnViewWillAppear = NO;
+    //self.clearsSelectionOnViewWillAppear = NO;
+    
+    /*NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    int row =  [prefs integerForKey:@"selectedRow"];
+    
+    NSIndexPath *index = [NSIndexPath indexPathForRow:row inSection:1];
+    
+    UITableViewCell *cell = (UITableViewCell*)[self.tableView cellForRowAtIndexPath:index];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;*/
  
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,8 +37,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Table view data source
+
+/*#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -158,4 +155,10 @@
     cell.accessoryType = UITableViewCellAccessoryNone;
 }
 
+#pragma mark - Save button click
+- (IBAction)saveButtonClick:(id)sender {
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setInteger:[self.tableView indexPathForSelectedRow].row forKey:@"selectedRow"];
+}
 @end
