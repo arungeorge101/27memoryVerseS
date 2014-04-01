@@ -19,16 +19,26 @@
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
-    //self.clearsSelectionOnViewWillAppear = NO;
+    self.clearsSelectionOnViewWillAppear = NO;
     
-    /*NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    int row =  [prefs integerForKey:@"selectedRow"];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    int row;
     
-    NSIndexPath *index = [NSIndexPath indexPathForRow:row inSection:1];
+    if([prefs objectForKey:@"selectedRow"] != nil)
+        row = [prefs integerForKey:@"selectedRow"];
+    else
+        row = 2;
     
-    UITableViewCell *cell = (UITableViewCell*)[self.tableView cellForRowAtIndexPath:index];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;*/
- 
+    self.checkedData = [NSIndexPath indexPathForRow:row inSection:0];
+    
+    [self.tableView selectRowAtIndexPath:self.checkedData animated:TRUE scrollPosition:UITableViewScrollPositionNone];
+    
+    [[self.tableView delegate] tableView:self.tableView didSelectRowAtIndexPath:self.checkedData];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,7 +46,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 /*#pragma mark - Table view data source
 
@@ -49,6 +58,7 @@
 {
     return 6;
 }
+*/
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -63,33 +73,56 @@
         
     }
     
-    //NSInteger section = [indexPath section];
     NSInteger section = indexPath.row;
     
     switch (section) {
         case 0: // First cell in section 1
             cell.textLabel.text = @"English Standard Version (ESV)";
+            cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
+            [cell.textLabel sizeToFit];
             break;
         case 1: // Second cell in section 1
             cell.textLabel.text = @"New American Standard Bible (NASB)";
+            cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
+            [cell.textLabel sizeToFit];
             break;
         case 2: // Third cell in section 1
             cell.textLabel.text = @"New International Version (NIV)";
+            cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
+            [cell.textLabel sizeToFit];
             break;
         case 3: // Fourth cell in section 1
             cell.textLabel.text = @"King James Version (KJV)";
+            cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
+            [cell.textLabel sizeToFit];
             break;
         case 4: // Fourth cell in section 1
             cell.textLabel.text = @"New King James Version (NKJV)";
+            cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
+            [cell.textLabel sizeToFit];
             break;
         default:
             // Do something else here if a cell other than 1,2,3 or 4 is requested
             break;
     }
     
+    //NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    /*int *selectedIndex =  [prefs integerForKey: @"selectedRow"];
+    
+    if(selectedIndex == section)
+    {
+        //[tableView selectRowAtIndexPath:selectedIndex animated:TRUE scrollPosition:UITableViewScrollPositionNone];
+        
+        //[[tableView delegate] tableView:tableView didSelectRowAtIndexPath:selectedIndex];
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+        cell.accessoryType = UITableViewCellAccessoryNone;*/
+    
     return cell;
 }
 
+/*
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UILabel * sectionHeader = [[UILabel alloc] initWithFrame:CGRectZero];
     sectionHeader.backgroundColor = [UIColor colorWithRed:59/255.0f green:126/255.0f blue:235/255.0f alpha:1.0f];
@@ -146,6 +179,9 @@
 {
     UITableViewCell *cell = (UITableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setInteger:[self.tableView indexPathForSelectedRow].row forKey:@"selectedRow"];
 }
 
 #pragma mark - deselect a row
@@ -153,12 +189,5 @@
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = (UITableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryNone;
-}
-
-#pragma mark - Save button click
-- (IBAction)saveButtonClick:(id)sender {
-    
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setInteger:[self.tableView indexPathForSelectedRow].row forKey:@"selectedRow"];
 }
 @end

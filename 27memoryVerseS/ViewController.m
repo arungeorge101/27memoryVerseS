@@ -226,9 +226,4 @@
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillDisappear:animated];
 }
-
-
-- (IBAction)versionButtonClicked:(id)sender {
-    
-}
 @end

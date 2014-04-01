@@ -13,6 +13,5 @@
 }
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property(nonatomic, retain) NSIndexPath *checkedData;
-- (IBAction)saveButtonClick:(id)sender;
 
 @end
