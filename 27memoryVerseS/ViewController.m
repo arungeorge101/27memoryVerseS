@@ -33,12 +33,6 @@
     //initialize the array to hold the Page objects
     arrayPages = [[NSMutableArray alloc]init];
     
-    [self loadVersesfromXML];
-    
-    self->iPadBool = [self amIAnIPad];
-    
-    [self createPagesinScrollView];
-    
 }
 
 #pragma mark - find if it is an iPad
@@ -84,6 +78,15 @@
         frameWidthforTitle = 250;
         curr_ScrollView = self.scrollView;
     }
+    
+    NSArray *viewsToRemove = [curr_ScrollView subviews];
+    
+    for (UIView *v in viewsToRemove) {
+        if ((![v isKindOfClass:[UIImageView class]]) && (v.tag == 123 || v.tag == 124 || v.tag == 125)) {
+            [v removeFromSuperview];
+            //[view performSelectorOnMainThread:@selector(removeFromSuperview) withObject:nil waitUntilDone:NO];
+        }
+    }
 
     for(page *myPage in arrayPages)
     {
@@ -109,6 +112,7 @@
         pageTitle.textAlignment = NSTextAlignmentCenter;
         pageTitle.numberOfLines = 0;
         pageTitle.lineBreakMode = NSLineBreakByWordWrapping;
+        pageTitle.tag = 123;
         [curr_ScrollView addSubview:pageTitle];
         
         //Find the width of the text based on the actual font and size
@@ -134,6 +138,7 @@
         [pageVerseRef sizeToFit];
         pageVerseRef.numberOfLines=0;
         pageVerseRef.textAlignment = NSTextAlignmentCenter;
+        pageVerseRef.tag = 124;
         [curr_ScrollView addSubview:pageVerseRef];
         
         
@@ -155,6 +160,7 @@
         pageVerse.numberOfLines = 0;
         pageVerse.textAlignment = NSTextAlignmentCenter;
         [pageVerse sizeToFit];
+        pageVerse.tag = 125;
         [curr_ScrollView addSubview:pageVerse];
         
         
@@ -170,8 +176,44 @@
 {
     NSError *error;
     
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    int row;
+    NSString *fileName;
+    
+    //read the current row value from the NSUserDefaults obect
+    if([prefs objectForKey:@"selectedRow"] != nil)
+        row = [prefs integerForKey:@"selectedRow"];
+    else
+        row = 2;
+    
+    switch (row){
+        case 0:
+            fileName = @"ESV_verses";
+            break;
+        case 1:
+            fileName = @"NASB_verses";
+            break;
+        case 2:
+            fileName = @"NIV_verses";
+            break;
+        case 3:
+            fileName = @"KJV_verses";
+            break;
+        case 4:
+            fileName = @"NKJV_verses";
+            break;
+        default:
+            fileName = @"NIV_verses";
+            break;
+    }
+    
+    //Clear all the arraypages before loading the new XML or else it will have the old pages
+    [arrayPages removeAllObjects];
+    
     //load the XML file
-    NSData *xmlData = [NSData dataWithContentsOfFile:@"/Users/arungeorge/Documents/Xcode_Repository/27memoryVerseS/27memoryVerseS/NIV_verses.xml"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"xml"];
+    //NSData *xmlData = [NSData dataWithContentsOfFile:@"/Users/arungeorge/Documents/Xcode_Repository/27memoryVerseS/27memoryVerseS/NIV_verses.xml"];
+    NSData *xmlData = [NSData dataWithContentsOfFile:filePath];
     
     DDXMLDocument *ddDoc = [[DDXMLDocument alloc] initWithData:xmlData options:0 error:&error];
     
@@ -220,6 +262,12 @@
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
+    
+    [self loadVersesfromXML];
+    
+    self->iPadBool = [self amIAnIPad];
+    
+    [self createPagesinScrollView];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
