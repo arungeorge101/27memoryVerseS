@@ -27,6 +27,9 @@
 		11B794F4188623B8003C3E67 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794EB188623B8003C3E67 /* DDXMLDocument.m */; };
 		11B794F5188623B8003C3E67 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794ED188623B8003C3E67 /* DDXMLElement.m */; };
 		11B794F6188623B8003C3E67 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794EF188623B8003C3E67 /* DDXMLNode.m */; };
+		11EAC9B919A58899009756D8 /* ESV_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11EAC9B619A58899009756D8 /* ESV_verses.xml */; };
+		11EAC9BA19A58899009756D8 /* NASB_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11EAC9B719A58899009756D8 /* NASB_verses.xml */; };
+		11EAC9BB19A58899009756D8 /* NKJV_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11EAC9B819A58899009756D8 /* NKJV_verses.xml */; };
 		11FEC9DD18A04D5D002DA8A7 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 11FEC9DC18A04D5D002DA8A7 /* 9.png */; };
 		11FECBDC18A1E1DB00E43981 /* tableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FECBDB18A1E1DB00E43981 /* tableVC.m */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,9 @@
 		11B794EE188623B8003C3E67 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		11B794EF188623B8003C3E67 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		11B794F1188623B8003C3E67 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		11EAC9B619A58899009756D8 /* ESV_verses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ESV_verses.xml; sourceTree = "<group>"; };
+		11EAC9B719A58899009756D8 /* NASB_verses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NASB_verses.xml; sourceTree = "<group>"; };
+		11EAC9B819A58899009756D8 /* NKJV_verses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NKJV_verses.xml; sourceTree = "<group>"; };
 		11FEC9DC18A04D5D002DA8A7 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = ../../../Downloads/9.png; sourceTree = "<group>"; };
 		11FECBDA18A1E1DB00E43981 /* tableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tableVC.h; path = 27memoryVerseS/tableVC.h; sourceTree = "<group>"; };
 		11FECBDB18A1E1DB00E43981 /* tableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tableVC.m; path = 27memoryVerseS/tableVC.m; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 		11920D811867E7DD0005F82D /* XMLFiles */ = {
 			isa = PBXGroup;
 			children = (
+				11EAC9B619A58899009756D8 /* ESV_verses.xml */,
+				11EAC9B719A58899009756D8 /* NASB_verses.xml */,
+				11EAC9B819A58899009756D8 /* NKJV_verses.xml */,
 				11920D821867EB130005F82D /* NIV_verses.xml */,
 				118C5967188E140F00E73A9B /* KJV_verses.xml */,
 			);
@@ -262,9 +271,12 @@
 				118D0B8D18667E7A00657BE6 /* Default.png in Resources */,
 				118D0B8F18667E7A00657BE6 /* Default@2x.png in Resources */,
 				118D0B9118667E7B00657BE6 /* Default-568h@2x.png in Resources */,
+				11EAC9B919A58899009756D8 /* ESV_verses.xml in Resources */,
 				11920D831867EB130005F82D /* NIV_verses.xml in Resources */,
+				11EAC9BB19A58899009756D8 /* NKJV_verses.xml in Resources */,
 				118C5968188E140F00E73A9B /* KJV_verses.xml in Resources */,
 				11448613189DED9200D4EA1A /* MainStoryboard_iPad.storyboard in Resources */,
+				11EAC9BA19A58899009756D8 /* NASB_verses.xml in Resources */,
 				11448614189DED9200D4EA1A /* MainStoryboard_iPhone.storyboard in Resources */,
 				11FEC9DD18A04D5D002DA8A7 /* 9.png in Resources */,
 			);
