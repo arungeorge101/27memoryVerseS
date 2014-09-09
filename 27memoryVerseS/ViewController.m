@@ -167,6 +167,7 @@
     }
     
     curr_ScrollView.contentSize = CGSizeMake(curr_ScrollView.frame.size.width * arrayPages.count, curr_ScrollView.frame.size.height);
+    curr_ScrollView.bounces = NO;
 }
 
 #pragma mark - loadVersefromXML
@@ -201,6 +202,12 @@
             break;
         case 4:
             fileName = @"NKJV_verses";
+            break;
+        case 5:
+            fileName = @"NLT_verses";
+            break;
+        case 6:
+            fileName = @"NRSV_verses";
             break;
         default:
             fileName = @"NIV_verses";
