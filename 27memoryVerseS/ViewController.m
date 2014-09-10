@@ -71,9 +71,9 @@
     else
     {
         offset = 25.0f;
-        titleFontSize = 18;
-        verseRefFontSize = 14;
-        verseFontSize = 16;
+        titleFontSize = 20;
+        verseRefFontSize = 16;
+        verseFontSize = 22;
         yCoordinateStart = 100;
         frameWidthforTitle = 250;
         curr_ScrollView = self.scrollView;
