@@ -71,10 +71,10 @@
     else
     {
         offset = 25.0f;
-        titleFontSize = 20;
+        titleFontSize = 19;
         verseRefFontSize = 16;
         verseFontSize = 22;
-        yCoordinateStart = 100;
+        yCoordinateStart = 80;
         frameWidthforTitle = 250;
         curr_ScrollView = self.scrollView;
     }

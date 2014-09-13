@@ -101,6 +101,16 @@
             cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
             [cell.textLabel sizeToFit];
             break;
+        case 5: // Fourth cell in section 1
+            cell.textLabel.text = @"New Living Translation (NLT)";
+            cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
+            [cell.textLabel sizeToFit];
+            break;
+        case 6: // Fourth cell in section 1
+            cell.textLabel.text = @"New Revised Standard Version (NRSV)";
+            cell.textLabel.font = [UIFont fontWithName: @"Copperplate-Light" size: 15];
+            [cell.textLabel sizeToFit];
+            break;
         default:
             // Do something else here if a cell other than 1,2,3 or 4 is requested
             break;
