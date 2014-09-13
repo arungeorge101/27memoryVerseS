@@ -36,7 +36,6 @@
 		11B794F4188623B8003C3E67 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794EB188623B8003C3E67 /* DDXMLDocument.m */; };
 		11B794F5188623B8003C3E67 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794ED188623B8003C3E67 /* DDXMLElement.m */; };
 		11B794F6188623B8003C3E67 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B794EF188623B8003C3E67 /* DDXMLNode.m */; };
-		11C40F8819BEA24700280DB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C40F8719BEA24700280DB8 /* Images.xcassets */; };
 		11EAC9B919A58899009756D8 /* ESV_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11EAC9B619A58899009756D8 /* ESV_verses.xml */; };
 		11EAC9BA19A58899009756D8 /* NASB_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11EAC9B719A58899009756D8 /* NASB_verses.xml */; };
 		11EAC9BB19A58899009756D8 /* NKJV_verses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11EAC9B819A58899009756D8 /* NKJV_verses.xml */; };
@@ -86,7 +85,6 @@
 		11B794EE188623B8003C3E67 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		11B794EF188623B8003C3E67 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		11B794F1188623B8003C3E67 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
-		11C40F8719BEA24700280DB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MemoryVersePages/Images.xcassets; sourceTree = "<group>"; };
 		11EAC9B619A58899009756D8 /* ESV_verses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ESV_verses.xml; sourceTree = "<group>"; };
 		11EAC9B719A58899009756D8 /* NASB_verses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NASB_verses.xml; sourceTree = "<group>"; };
 		11EAC9B819A58899009756D8 /* NKJV_verses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NKJV_verses.xml; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 		118D0B6E18667E7A00657BE6 = {
 			isa = PBXGroup;
 			children = (
-				11C40F8719BEA24700280DB8 /* Images.xcassets */,
 				11FECBDA18A1E1DB00E43981 /* tableVC.h */,
 				11FECBDB18A1E1DB00E43981 /* tableVC.m */,
 				11FEC9DB18A04D29002DA8A7 /* Images */,
@@ -306,7 +303,6 @@
 				11EAC9B919A58899009756D8 /* ESV_verses.xml in Resources */,
 				11920D831867EB130005F82D /* NIV_verses.xml in Resources */,
 				11EAC9BB19A58899009756D8 /* NKJV_verses.xml in Resources */,
-				11C40F8819BEA24700280DB8 /* Images.xcassets in Resources */,
 				11AB48FA19C40A5400768290 /* MVPages_appicon114.png in Resources */,
 				11AB48FC19C40A5400768290 /* MVpages_appstoreappicon.png in Resources */,
 				118C5968188E140F00E73A9B /* KJV_verses.xml in Resources */,
