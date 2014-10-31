@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "118D0B7618667E7A00657BE6"
-               BuildableName = "MemoryVersePages.app"
+               BuildableName = "MV Pages.app"
                BlueprintName = "MV Pages"
                ReferencedContainer = "container:MV Pages.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "118D0B7618667E7A00657BE6"
-            BuildableName = "MemoryVersePages.app"
+            BuildableName = "MV Pages.app"
             BlueprintName = "MV Pages"
             ReferencedContainer = "container:MV Pages.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "118D0B7618667E7A00657BE6"
-            BuildableName = "MemoryVersePages.app"
+            BuildableName = "MV Pages.app"
             BlueprintName = "MV Pages"
             ReferencedContainer = "container:MV Pages.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "118D0B7618667E7A00657BE6"
-            BuildableName = "MemoryVersePages.app"
+            BuildableName = "MV Pages.app"
             BlueprintName = "MV Pages"
             ReferencedContainer = "container:MV Pages.xcodeproj">
          </BuildableReference>

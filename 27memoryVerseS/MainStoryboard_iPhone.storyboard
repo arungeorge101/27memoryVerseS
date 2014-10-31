@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uAI-NX-dbs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uAI-NX-dbs">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -27,6 +27,17 @@
                                         </state>
                                         <connections>
                                             <segue destination="k5I-QK-GRE" kind="push" identifier="versionSegue" id="4hl-kV-47Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fU5-w4-eAD">
+                                        <rect key="frame" x="25" y="19" width="96" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="12"/>
+                                        <state key="normal" title="Add New Verse">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cPQ-2X-iDm" kind="modal" id="Kw8-WU-dHq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -189,6 +200,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2eX-qv-R14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2595" y="77"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vXL-5z-lfC">
+            <objects>
+                <viewController id="cPQ-2X-iDm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6eU-6q-uJm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWP-TK-HeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2197" y="729"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Asj-nF-DNT">
